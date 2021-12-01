@@ -6,7 +6,7 @@ from django.http import HttpResponseRedirect
 
 class Add(CreateView):
     model = Product
-    fields = ('name','weight','price')
+    fields = ('name', 'weight', 'price')
     template_name = 'product.html'
     success_url = '/product/'
 
